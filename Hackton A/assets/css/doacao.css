@@ -1,0 +1,107 @@
+/* Estilo para a coluna que contém a imagem */
+.col-3 {
+    display: flex; /* Usando flexbox para alinhar conteúdo verticalmente */
+    align-items: center; /* Alinha verticalmente o conteúdo dentro da coluna */
+}
+
+/* Estilo para a imagem dentro da coluna */
+.col-3 img {
+    max-width: 20%; /* Garante que a imagem não ultrapasse o contêiner */
+    margin-right: 15px; /* Espaçamento entre a imagem e o botão */
+    float: left; /* Define a imagem para flutuar à esquerda */
+}
+
+/* Ajuste para o botão de doação */
+.btn-doacao {
+    background-color: #337ab7; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Borda arredondada do botão */
+    cursor: pointer; /* Cursor ao passar por cima do botão */
+    margin-top: 20px; /* Espaço superior do botão em relação ao conteúdo acima */
+    float: right; /* Define o botão para flutuar à direita */
+}
+
+.btn-adicionar {
+    margin-right: 40px;
+    position: relative;
+}
+
+.btn-adicionar-3 {
+    margin-right: 45px;
+    position: relative;
+}
+
+
+.btn-adicionar-2 {
+    margin-left: 170px;
+    position: relative;
+}
+
+.btn-doacao:hover {
+    background-color: #23527c; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Ajuste para a mensagem do botão ao clicar */
+.btn-doacao:active::after {
+    display: block; /* Exibe o elemento após clicar */
+    position: absolute; /* Posicionamento absoluto em relação ao botão */
+    top: 100%; /* Posiciona abaixo do botão */
+    left: 0; /* Alinha à esquerda do botão */
+    background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo semitransparente */
+    color: #fff; /* Cor do texto */
+    padding: 5px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    z-index: 999; /* Ordem de empilhamento */
+    font-size: 14px; /* Tamanho da fonte */
+    width: 100%; /* Largura igual ao botão */
+    text-align: right; /* Alinhamento do texto à direita */
+}
+
+/* Estilo para a classe .image dentro do contêiner */
+.image img {
+    max-width: 40%; /* Define a largura máxima da imagem como 40% do contêiner pai */
+    height: auto; /* Permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+    display: block; /* Exibe a imagem como bloco para gerenciar o espaço ao redor */
+    margin: -20 auto; /* Centraliza a imagem horizontalmente dentro do contêiner pai */
+    max-width: 10; /* Valor inválido para max-width; deve ser removido ou corrigido */
+}
+
+/* Estilo para o contêiner principal */
+.container {
+    display: flex; /* Usando flexbox para alinhar conteúdo verticalmente */
+    align-items: center; /* Alinha verticalmente o conteúdo dentro do contêiner */
+    justify-content: space-between; /* Distribui o espaço entre os itens do contêiner */
+    flex-wrap: wrap; /* Permite que os itens quebrem para uma nova linha conforme necessário */
+    max-width: 800px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente na página */
+    padding: 20px; /* Espaçamento interno do contêiner */
+}
+
+/* Estilo para as colunas dentro do contêiner */
+.container .col-2 {
+    flex: 1 1 45%; /* Define a largura das colunas com flexbox */
+    margin-bottom: 20px; /* Espaço inferior entre as colunas */
+}
+
+/* Estilo para as imagens dentro das colunas */
+.container .col-2 img {
+    width: 70%; /* Define a largura da imagem como 100% da largura da coluna */
+    max-width: 70%; /* Define a largura máxima da imagem como 100% da largura da coluna */
+    height: auto; /* Permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+    display: block; /* Exibe a imagem como bloco */
+}
+
+/* Estilo para os títulos dentro das colunas */
+.container .col-2 h2 {
+    font-size: 2.5em; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaço inferior abaixo do título */
+}
+
+/* Estilo para os parágrafos dentro das colunas */
+.container .col-2 p {
+    font-size: 1em; /* Tamanho da fonte do parágrafo */
+    line-height: 1.6; /* Altura da linha do parágrafo */
+    margin-bottom: 10px; /* Espaço inferior abaixo do parágrafo */
+}
